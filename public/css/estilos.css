@@ -1,0 +1,401 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+.home{
+    background-image: url("../img/codigo-fuente-programacion.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.barra{
+    min-height: 60px;
+}
+.anvorguesa{
+    height: 45px;
+    width: 45px;
+    background: none;
+    border-radius: 5px;
+    border: white 3px solid;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+.raya{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin: 0;
+    margin: 20% 0;
+}
+.dark{
+    background-color: black;
+}
+.menu{
+    margin-left: 10%;
+    display: none;
+    padding-top: 2%
+}
+.menu a{
+    text-decoration: none;
+    padding: 1% 5%;
+    font-weight: bold;
+}
+.blanco{
+    color: white;
+}
+.diseño{
+    background-color: rgb(255, 230, 4);
+    position: absolute;
+    top: 10%;
+    right: 0;
+    min-width: 70%;
+    min-height: 90%;
+}
+.iAm{
+    background-color: purple;
+    position: absolute;
+    top: 5vw;
+    left: 59vw;
+    width: 700px;
+    height: 700px;
+    border-radius: 100%;
+}
+
+.titulo{
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    font-size: 15vw;
+    color: white;
+}
+.negro{
+    color: black;
+}
+.perfil{
+    width: 100%;
+    position: relative;
+    left: -10%;
+    z-index: -1;
+}
+.iAm p{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: large;
+}
+.iAm h1{
+    font-size: 8vw;
+    position: absolute;
+    left: -25%;
+    top: -3%;
+}
+.work{
+    /* display: flex; */
+    text-align: center;
+    margin-bottom: 7%;
+    position: relative;
+    
+}
+.container h1{
+    font-size: 10vw;
+    max-width: 100%;
+    background-color: rgb(4, 255, 79);
+    box-shadow: 5px 5px 15px -8px #424242;
+}
+.container{
+    display: flex;
+}
+.xp{
+    position: relative;
+    top: 0%;
+    left: 0;
+    max-width: 30%; 
+}
+.logos{
+    text-align: center;
+    min-width: 70%;
+    margin-top: 3%;
+}
+.logos a{
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: black;
+    text-decoration: none;
+}
+.logos a h2{
+    display: inline;
+    margin: 5%;
+    min-width: 50%;
+    text-align: end;
+}
+.logos a img{
+    max-width: 27%;
+    transition: 0.5s;
+}
+.logos a img:hover{
+    max-width: 35%;
+    transition: 0.5s;
+}
+.xpItem{
+    display: flex;
+    align-items: center;
+    background-color: aquamarine;
+    border-radius: 10vw;
+    box-shadow: 5px 5px 15px -8px #424242;
+    
+}
+.work img{
+    max-width: 100%;
+    box-shadow: 5px 5px 15px -8px #424242;
+
+}
+.xpItem p{
+    padding: 5%;
+}
+.academia{
+    background-color: black;
+}
+.bg{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.estudios{
+    position: absolute;
+    top: 89%;
+    min-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.808);
+    box-shadow: 1px 1px 15px 1px #000000;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.skills{
+    background: linear-gradient(225deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    min-height: 70vw;
+}
+.turn{
+    font-size: 6vw;
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 5%;
+    left: 0;
+}
+.tarjetas{
+    width: 70%;
+    min-height: 450px;
+    box-shadow: 1px 1px 15px -5px #424242;
+    background-color:  rgb(0, 0, 37);
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    left: 15%;
+    margin: 5%;
+    color: white;
+    text-align: center;
+}
+.skTitle{
+    position: absolute;
+    bottom: 12%;
+    left: -1%;
+    font-size: 4vw;
+    transform: rotate(270deg);
+    margin: 0;
+    
+}
+.tarjetas img{
+    width: 30%;
+    
+}
+.tItem{
+    padding: 2%;
+    width: 20%;
+}
+.progreso{
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(red 50%, rgb(54, 27, 27) 50%);
+    border-radius: 50%;
+    position: relative;
+    transform: rotate(225deg);
+    margin: auto;
+}
+.progreso::before{
+    content: "";
+    width: 35px;
+    height: 35px;
+    background: rgb(0, 0, 37);
+    border-radius: 50%;
+    position: absolute;
+    top: 11%;
+    left: 11%;
+    font-weight: bold;
+    line-height: 40px;
+    color: red;
+    transform: rotate(-225deg);
+    margin: auto;
+}
+.Color2{
+    background: linear-gradient(blue 75%, rgb(27, 27, 56) 25%);
+
+}
+.color3{
+    background: linear-gradient(rgb(28, 56, 28) 75%, green 25%);
+}
+.contact{
+    background-image: url("../img/icon-minimalism-black-white-minimal-smartphone-monitor-world.jpg");
+}
+.contc{
+    background-color: rgba(0, 0, 0, 0.705);
+    overflow: hidden;
+}
+.contc input, .contc textarea{
+    font-size: x-large;
+    font-weight: bold;
+    display: block;
+    min-width: 50%;
+    padding: 1%;
+    margin: 2% auto;
+    opacity: 80%;
+    border-radius: 20px;
+}
+#git{
+    position: fixed;
+    bottom: 10%;
+    right: -30%;
+}
+#git img{
+    max-width: 15%;
+}
+#git:hover{
+    opacity: 50%;
+}
+@media(max-width: 1250px){
+    .iAm h1{
+        left: 0;
+    }
+    .iAm p{
+        left: 30%;
+        max-width: 40%;
+    }
+}
+@media(max-width: 800px){
+    .barra{
+        background-color: black;
+        opacity: 90%;
+        z-index: 3;
+        position: relative;
+    }
+    .titulo{
+        position: relative;
+    }
+    .anvorguesa{
+        position: relative;
+        margin-bottom: 6%;
+    }
+    .menu a{
+        display: block;
+        padding: 5%;
+        border-bottom: solid 1px white;
+    }
+    .estudios{
+        top: 35%;
+    }
+    .estudios img{
+        max-width: 75%;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    .container h1{
+        font-size: 17vw;
+    }
+    .logos a{
+        margin-left: 10%;
+        justify-content: center;
+    }
+    .tItem{
+        width: 30%;
+    }
+    .skTitle{
+        font-size: 8vw;
+    }
+    .turn{
+        font-size: 10vw;
+    }
+    .tItem{
+        padding: 5%;
+    }
+    .contc{
+        height: 160vw;
+    }
+    #git{
+        right: -50%;
+    }
+    .iAm{
+        position: relative;
+        left: 20vw;
+        width: 500px;
+    height: 500px;
+    }
+    .iAm h1{
+        left: 5%;
+        font-size: 10vw;
+    }
+    .iAm p{
+        top: 30%;
+        left: 50%;
+    }
+    .perfil{
+        position: static;
+    }
+}
+@media(max-width: 450px){
+    .logos a{
+        
+        justify-content: start;
+    }
+    .logos a h2{
+        text-align: start;
+    }
+    .xpItem{
+        border-radius: 5px;
+    }
+    .tItem{
+        width: 50%;
+    }
+    .contc{
+        height: 210vw;
+    }
+    .iAm p{
+        top: 20%;
+        left: 30%;
+    }
+}
+@media(max-width: 600px){
+    .xpItem{
+        border-radius: 25px;
+    }
+    .tItem{
+        padding: 10%;
+    }
+    .tarjetas img{
+        width: 50%;
+    }
+    .iAm h1{
+        font-size: 13vw;
+    }
+}
+
