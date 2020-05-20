@@ -1,10 +1,12 @@
-const express = require('express'), project = express(), path = require('path');
+const express = require('express'), project = express(), path = require('path'), cookieParser = require('cookie-parser'), 
+cookieSession = require('cookie-session');
+
+project.use(cookieParser()),
+project.use(cookieSession({secret: "esto tiene alguna funcion de seguridad"}))
 
 project.use(express.static(path.join(__dirname, "/public")));
 
-project.use(express.json());
-
-project.get('/', (req, res)=>{
+project.get('/index', (req, res)=>{
     res.sendFile(`${__dirname}/vistas/index.html`);
 });
 project.get('/academia', (req, res)=>{
@@ -22,10 +24,6 @@ project.get('/xperience', (req, res)=>{
 project.get('/contact', (req, res)=>{
     res.sendFile(`${__dirname}/vistas/contact.html`)
 });
-project.get('/login', (req, res)=>{
-    res.sendFile(`${__dirname}/vistas/login.html`)
-});
-
 
 
 project.listen(3000);
