@@ -6,7 +6,7 @@ project.use(cookieSession({secret: "esto tiene alguna funcion de seguridad"}))
 
 project.use(express.static(path.join(__dirname, "/public")));
 
-project.get('/index', (req, res)=>{
+project.get('/', (req, res)=>{
     res.sendFile(`${__dirname}/vistas/index.html`);
 });
 project.get('/academia', (req, res)=>{
